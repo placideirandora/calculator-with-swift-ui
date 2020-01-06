@@ -28,7 +28,7 @@ struct ContentView: View {
                 HStack{
                     Spacer()
                     Text("0").foregroundColor(.white).font(.system(size: 60))
-                }.padding()
+                }.padding(40)
                 
                 // Display the buttons form the dimensional array
                 ForEach(buttons, id: \.self) { row in

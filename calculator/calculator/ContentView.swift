@@ -10,7 +10,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Placide IRANDORA Is A Rwandan Software Engineer and Cybersecurity Specialist")
+        VStack {
+            HStack {
+                ForEach(["7", "8", "9", "X"], id: \.self) { button in
+                    Text(button)
+                        .font(.system(size: 35))
+                    .frame(width: 80, height: 80)
+                }
+            }
+        }
     }
 }
 

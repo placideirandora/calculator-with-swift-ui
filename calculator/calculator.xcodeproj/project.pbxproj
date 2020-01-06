@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CE9AD41123C3B53300BFB8F0 /* calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9AD41123C3B53300BFB8F0 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9AD41423C3B53300BFB8F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9AD41623C3B53300BFB8F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE9AD41823C3B53300BFB8F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		CE9AD41223C3B53300BFB8F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE9AD41123C3B53300BFB8F0 /* calculator.app */,
+				CE9AD41123C3B53300BFB8F0 /* Calculator.app */,
 				CE9AD42723C3B53600BFB8F0 /* calculatorTests.xctest */,
 				CE9AD43223C3B53600BFB8F0 /* calculatorUITests.xctest */,
 			);
@@ -153,7 +153,7 @@
 			);
 			name = calculator;
 			productName = calculator;
-			productReference = CE9AD41123C3B53300BFB8F0 /* calculator.app */;
+			productReference = CE9AD41123C3B53300BFB8F0 /* Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CE9AD42623C3B53600BFB8F0 /* calculatorTests */ = {
@@ -443,7 +443,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.placideirandora.calculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Calculator;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,7 +462,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.placideirandora.calculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Calculator;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

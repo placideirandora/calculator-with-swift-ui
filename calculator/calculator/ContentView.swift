@@ -24,7 +24,7 @@ struct ContentView: View {
             // Make the whole background color black
             Color.black.edgesIgnoringSafeArea(.all)
             
-            VStack (spacing: 10) {
+            VStack (spacing: 20) {
                 HStack{
                     Spacer()
                     Text("0").foregroundColor(.white).font(.system(size: 60))

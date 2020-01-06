@@ -20,6 +20,8 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
+            Color.black
+            
             VStack {
                 // Display the buttons form the dimensional array
                 ForEach(buttons, id: \.self) { row in
@@ -27,7 +29,9 @@ struct ContentView: View {
                         ForEach(row, id: \.self) { button in
                             Text(button)
                                 .font(.system(size: 35))
-                                    .frame(width: 80, height: 80)
+                                .frame(width: 80, height: 80)
+                                .foregroundColor(.white)
+                                    
                         }
                     }
                 }

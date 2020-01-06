@@ -20,7 +20,8 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            Color.black
+            // Make the whole background color black
+            Color.black.edgesIgnoringSafeArea(.all)
             
             VStack {
                 // Display the buttons form the dimensional array

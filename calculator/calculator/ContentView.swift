@@ -19,14 +19,16 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        VStack {
-            // Display the buttons form the dimensional array
-            ForEach(buttons, id: \.self) { row in
-                HStack {
-                    ForEach(row, id: \.self) { button in
-                        Text(button)
-                            .font(.system(size: 35))
-                                .frame(width: 80, height: 80)
+        ZStack {
+            VStack {
+                // Display the buttons form the dimensional array
+                ForEach(buttons, id: \.self) { row in
+                    HStack {
+                        ForEach(row, id: \.self) { button in
+                            Text(button)
+                                .font(.system(size: 35))
+                                    .frame(width: 80, height: 80)
+                        }
                     }
                 }
             }
@@ -34,7 +36,7 @@ struct ContentView: View {
     }
 }
 
-// Display the content 
+// Display the content
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

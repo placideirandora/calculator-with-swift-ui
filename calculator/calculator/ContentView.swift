@@ -25,6 +25,11 @@ struct ContentView: View {
             Color.black.edgesIgnoringSafeArea(.all)
             
             VStack {
+                HStack{
+                    Spacer()
+                    Text("0").foregroundColor(.white).font(.system(size: 60))
+                }.padding()
+                
                 // Display the buttons form the dimensional array
                 ForEach(buttons, id: \.self) { row in
                     HStack {

@@ -12,14 +12,15 @@ struct ContentView: View {
     
     // Two dimensional array
     let buttons: Array = [
-        ["7", "8", "9", "X"],
+        ["7", "8", "9", "x"],
         ["4", "5", "6", "-"],
         ["1", "2", "3", "+"],
         ["0", ".", ".", "="]
     ]
     
     var body: some View {
-        ZStack {
+        // Allign the V and H stacks at the bottom
+        ZStack (alignment: .bottom) {
             // Make the whole background color black
             Color.black.edgesIgnoringSafeArea(.all)
             

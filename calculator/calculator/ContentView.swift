@@ -13,7 +13,7 @@ enum CalculatorButton: String {
     case zero, one, two, three, four
     case five, six, seven, eight, nine
     case equals, plus, minus, multiply, divide
-    case ac, plusMinus, percent
+    case ac, plusMinus, percent, dot
     
     // Map the corresponding titles
     var title: String {
@@ -72,6 +72,9 @@ enum CalculatorButton: String {
         case .divide:
             return "/"
             
+        case .dot:
+            return "."
+            
         default:
             return ""
         }
@@ -80,7 +83,7 @@ enum CalculatorButton: String {
     // Map the corresponding colors
     var backgroundColor: Color {
         switch self {
-        case .zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine:
+        case .zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .dot:
             return Color(.darkGray)
             
         case .ac, .plusMinus, .percent:
@@ -99,7 +102,8 @@ struct ContentView: View {
         [.ac, .plusMinus, .percent, .divide],
         [.seven, .eight, .nine, .multiply],
         [.four, .five, .six, .minus],
-        [.one, .two, .three, .plus]
+        [.one, .two, .three, .plus],
+        [.zero, .dot, .equals]
     ]
     
     var body: some View {

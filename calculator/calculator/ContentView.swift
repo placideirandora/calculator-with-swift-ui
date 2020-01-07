@@ -8,12 +8,14 @@
 
 import SwiftUI
 
+// Enumeration that holds buttons and their properties
 enum CalculatorButton: String {
     case zero, one, two, three, four
     case five, six, seven, eight, nine
     case equals, plus, minus, multiply, divide
     case ac, plusMinus, percent
     
+    // Map the corresponding titles
     var title: String {
         switch self {
         case .zero:
@@ -75,6 +77,7 @@ enum CalculatorButton: String {
         }
     }
     
+    // Map the corresponding colors
     var backgroundColor: Color {
         switch self {
         case .zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine:

@@ -99,6 +99,10 @@ enum CalculatorButton: String {
 class GlobalEnvironment: ObservableObject {
     @Published var value = "0"
     
+    func receiveInput(calculatorButton: CalculatorButton) {
+        self.value = calculatorButton.title
+    }
+    
 }
 
 struct ContentView: View {
@@ -130,7 +134,7 @@ struct ContentView: View {
                     HStack {
                         ForEach(row, id: \.self) { button in
                             Button(action: {
-                                self.env.value = button.title
+                                self.env.receiveInput(calculatorButton: button)
                             }) {
                                 Text(button.title)
                                 .font(.system(size: 35))

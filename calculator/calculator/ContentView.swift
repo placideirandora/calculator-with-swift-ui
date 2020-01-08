@@ -95,7 +95,14 @@ enum CalculatorButton: String {
     }
 }
 
+// Application state
+class GlobalEnvironment: ObservableObject {
+    @Published var value = "0"
+    
+}
+
 struct ContentView: View {
+    @EnvironmentObject var env: GlobalEnvironment
     
     // Two dimensional array
     let buttons: [[CalculatorButton]] = [
@@ -115,7 +122,7 @@ struct ContentView: View {
             VStack (spacing: 20) {
                 HStack{
                     Spacer()
-                    Text("0").foregroundColor(.white).font(.system(size: 60))
+                    Text(env.value).foregroundColor(.white).font(.system(size: 60))
                 }.padding(40)
                 
                 // Display the buttons form the dimensional array
@@ -144,6 +151,6 @@ struct ContentView: View {
 // Display the content
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(GlobalEnvironment())
     }
 }

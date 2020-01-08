@@ -130,7 +130,7 @@ struct ContentView: View {
                     HStack {
                         ForEach(row, id: \.self) { button in
                             Button(action: {
-                                
+                                self.env.value = button.title
                             }) {
                                 Text(button.title)
                                 .font(.system(size: 35))

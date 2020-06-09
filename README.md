@@ -6,5 +6,5 @@ An iOS  calculator clone.
 ### Clone The Project
 
 ```
-$ git clone https://github.com/placideirandora/calculator-with-swift-ui
+$ git clone https://github.com/placiderapson/calculator-with-swift-ui
 ```
